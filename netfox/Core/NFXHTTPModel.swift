@@ -67,7 +67,7 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
     
     func saveRequestBody(_ request: URLRequest)
     {
-        print(request.HARRepresentation)
+//        print(request.HARRepresentation)
         saveRequestBodyData(request.getNFXBody())
     }
     
@@ -234,7 +234,7 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
         do {
             try dataString.write(toFile: toFile, atomically: false, encoding: String.Encoding.utf8.rawValue)
         } catch {
-            print("catch !!!")
+//            print("catch !!!")
         }
     }
 
@@ -243,7 +243,7 @@ fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
             let data = try Data(contentsOf: URL(fileURLWithPath: filePath))
             return data
         } catch {
-            print(error.localizedDescription)
+//            print(error.localizedDescription)
             return nil
         }
     }

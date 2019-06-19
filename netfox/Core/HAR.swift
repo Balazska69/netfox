@@ -137,7 +137,7 @@ class HAR {
 
             // does the entry have a response?
             if (response == nil) {
-                print("Entry \(idx) for \(url) missing response")
+//                print("Entry \(idx) for \(url) missing response")
             }
 
             // does the entry have a timings record?
@@ -145,14 +145,14 @@ class HAR {
                 let redirectUrl = request?[HARConstants.HARRedirectURL] ?? "missing redirect url"
 
                 if (_timings[HARConstants.HARSend] == nil) {
-                    print("Timings \(idx) for \(redirectUrl) missing send")
+//                    print("Timings \(idx) for \(redirectUrl) missing send")
                 }
 
                 if (_timings[HARConstants.HARWait] == nil) {
-                    print("Timings \(idx) for \(redirectUrl) missing send")
+//                    print("Timings \(idx) for \(redirectUrl) missing send")
                 }
             } else {
-                print("Entry \(idx) for \(url) missing timings")
+//                print("Entry \(idx) for \(url) missing timings")
             }
         }
     }
